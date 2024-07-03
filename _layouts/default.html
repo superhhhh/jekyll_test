@@ -69,10 +69,10 @@
 					{% assign changelog = site.html_pages | where: 'url', '/changelog/' | first %}
 					<a href="{{ site.baseurl }}/changelog/">{{ changelog.title }}</a>
 				</li>
-				{% if page.url === /china/ %}
+				{% if page.url contains '/china/' %}
 				<li class="nav-item top-level {% if page.url == '/changelog/' %}current{% endif %}">
-					{% assign changelog = site.html_pages | where: 'url', '/changelog/' | first %}
-					<a href="{{ site.baseurl }}/china/changelog/">{{ changelog.title }}</a>
+					{% assign ChinaChangelog = site.html_pages | where: 'url', '/china/changelog/' | first %}
+					<a href="{{ site.baseurl }}/china/changelog/">{{ ChinaChangelog.title }}</a>
 				</li>
 				{% endif %}
 			</ul>
