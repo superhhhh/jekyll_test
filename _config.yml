@@ -54,7 +54,8 @@ collections:
     output: true
   chinaposts:
     output: true
-
+  chinadocs:
+    output: true
 defaults:
   -
     scope:
