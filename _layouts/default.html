@@ -74,7 +74,7 @@
 				{% endunless %}
 
 				{% if page.url contains '/china/' %}
-				<li class="nav-item top-level {% if page.url == '/changelog/' %}current{% endif %}">
+				<li data="1" class="nav-item top-level {% if page.url == '/changelog/' %}current{% endif %}">
 					{% assign ChinaChangelog = site.html_pages | where: 'url', '/china/chinachangelog/' | first %}
 					<a href="{{ site.baseurl }}/china/chinachangelog/">{{ ChinaChangelog.title }}</a>
 				</li>
