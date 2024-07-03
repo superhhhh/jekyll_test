@@ -1,6 +1,6 @@
 ---
-title: 联系人同步
-category: Contact Syncing
+title: facebook
+category: 联系人同步
 order: 1
 permalink: /china/facebook/
 ---
